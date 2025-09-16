@@ -1,0 +1,9 @@
+update prefix_options set option_value= REPLACE(option_value,'oldwebsiteurl','newwebsiteurl');
+
+update prefix_posts set guid = REPLACE(guid,'oldwebsiteurl','newwebsiteurl');
+
+update prefix_posts set post_content = REPLACE(post_content,'oldwebsiteurl','newwebsiteurl');
+
+update prefix_postmeta set meta_value = REPLACE(meta_value,'oldwebsiteurl','newwebsiteurl');
+
+update prefix_users set user_email = REPLACE(user_email,'oldwebsiteurl','newwebsiteurl');
